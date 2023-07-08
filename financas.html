@@ -17,30 +17,28 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-5">
-        <a class="monant navbar-brand" href="#">Monant</a>
-        <img src="./Assets/Images/logo.svg" alt="">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
-            aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="d-flex justify-content-around navbar navbar-expand-lg bg-body-tertiary fixed-top ms-xxl-4">
+        <div class="d-flex align-items-center">
+            <a class="monant navbar-brand fa-bounce" href="#">Monant</a>
+            <img class="fa-bounce" src="./Assets/Images/logo.svg" alt="">
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <i class="text-success fa-sharp fa-solid fa-bars"></i>
         </button>
-
         <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
             aria-labelledby="navbarOffcanvasLgLabel">
 
-            <div class="offcanvas-header">
-                <div class="">
-                    <h5 class=" monant offcanvas-title" id="offcanvasNavbarLabel">Monant</h5>
-                    <img src="./Assets/Images/logo.svg" alt="">
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header" style="background-color: #021C41;">
+                <span class="d-flex justify-content-center align-items-center">
+                    <h5 class="monant offcanvas-title" id="offcanvasNavbarLabel">Monant</h5>
+                    <img class="crescer-formiga px-2 h-25 w-25 " src="./Assets/Images/logo.svg" alt="">
+                </span>
+                <i type="button" class="btn fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="color: #fff;"></i>
             </div>
-
-            <div class="offcanvas-body"
-                <ul class="d-flex justify-content-around w-100 navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll "
-                    style="--bs-scroll-height: 100px;">
+            <div class="crescer-nav offcanvas-body" style="background-color: #021C41;">
+                <ul class="d-flex justify-content-around w-100 navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
 
                     <li class="botao-nav nav-item text-primary-emphasis">
                         <a class="nav-link active fw-bold" aria-current="page" href="#">Finanças</a>
@@ -70,69 +68,81 @@
                     </li>
 
                     <li class="nav-item">
-                        <img src="./Assets/Images/user.svg" alt="">
+                        <img class="pessoa" src="./Assets/Images/user.svg" alt="">
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <main class="d-flex justify-content-around px-3">
-
         <!-- Lado Esquerdo "Débito Atual" -->
-        <div class="d-flex">
-            <div class="card rounded-5 bg-primary text-white">
-                <ul class="rounded-5 bg-danger">
-                    <li class="d-flex justify-content-between align-items-center"><img class="rounded-circle"
-                            src="./Assets/Images/user-foto.svg" alt="">
-                        <p class="">Débito Atual</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-end">
-                        <span class="">
-                            R$: 1.465,62
-                        </span>
-                    </li>
-                </ul>
-                <div class="d-flex justify-content-between">
-                    <p>Rosane Oliveira da Silva</p>
-                    <div class="d-flex">
-                        <h5 class="monant offcanvas-title" id="offcanvasNavbarLabel">Monant</h5>
-                        <img src="./Assets/Images/logo.svg" alt="">
+        <div class="crescer-esquerda m-auto m-sm-auto m-md-auto">
+            <ul class="crescer-card rounded-4 d-md-inline-grid d-sm-inline-grid d-lg-inline-grid container"
+                style="padding-top: 6rem;">
+                <li class="d-flex justify-content-between align-items-center rounded-top-4"
+                    style="background: #101D26;">
+                    <img class="rounded-circle p-2" src="./Assets/Images/user-foto.svg" alt="">
+                    <p class="crescer-titulo-e text-white p-2" style="font-family: Josefin Sans; font-size: 28px;">Débito Atual</p>
+                </li>
+                <li class="list-group-item d-flex justify-content-end" style="background: #101D26;">
+                    <span class="align-items-center rounded-start-4 bg-black px-3 fw-bold text-white"
+                        style="font-family: Josefin Sans;">
+                        <i class="fa-solid fa-eye p-2"></i>
+                        R$: 1.465,62
+                    </span>
+                </li>
+                <li class="d-flex justify-content-between rounded-bottom-4 bg-primary align-items-center"
+                    style="height: 4rem; background: linear-gradient(90deg, #38146A 0%, #6E46A6 100%);">
+                    <p class="mt-2 align-items-center p-2 text-white" style="font-family: Josefin Sans; opacity: 82%;">
+                        Rosane Oliveira da
+                        Silva</p>
+                    <div class="d-flex justify-content-end">
+                        <img class="w-75 p-2" src="./Assets/Images/simbolo-cartao.svg" alt="">
                     </div>
-                </div>
+                </li>
+            </ul>
+            <div class="p-1">
             </div>
-
-            <div class="container-fluid text-center">
-                
-                <div class="p-3 w-50">
-
-                </div>
-
-                <div class="d-flex">
-                    <div class="d-flex flex-wrap order-2 w-25 align-items-center">
-                        <button class="botao-acao btn d-flex">
-                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+            <div class="container m-auto">
+                <div class="row mt-3">
+                    <div class="col">
+                        <button class="botao-acao btn">
+                            <img src="./Assets/Images/icons-btn/transferir.svg" alt="">
                             <p>Transferir</p>
                         </button>
+                    </div>
+                    <div class="col">
                         <button class="botao-acao btn d-flex">
-                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                            <img src="./Assets/Images/icons-btn/depositar.svg" alt="">
                             <p>Depositar</p>
                         </button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
                         <button class="botao-acao btn d-flex">
-                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                            <img src="./Assets/Images/icons-btn/pix.svg" alt="">
                             <p>Pix</p>
                         </button>
+                    </div>
+                    <div class="col">
                         <button class="botao-acao btn d-flex">
-                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                            <img src="./Assets/Images/icons-btn/bolsa.svg" alt="">
                             <p>Comprar na bolsa</p>
                         </button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
                         <button class="botao-acao btn d-flex">
-                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                            <img src="./Assets/Images/icons-btn/transferir-cripto.svg" alt="">
                             <p>Transferir como cripto</p>
                         </button>
-                        <button class="botao-acao btn d-flex">
-                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                        <button class="botao-ativo btn d-flex">
+                            <img src="./Assets/Images/icons-btn/extrato.svg" alt="">
                             <p>Extrato</p>
                         </button>
                     </div>
@@ -141,30 +151,30 @@
         </div>
 
         <!-- Lado Direito "Extrato" -->
-        <div class="direita text-white">
-            <h4 class="pb-2">Extrato</h2>
+        <div class="crescer-direita direita text-white m-auto">
+            <h4 class="crescer-titulo-d pb-2 fw-bolder" style="font-family: Josefin Sans; font-size: 38px;">Extrato</h2>
                 <div class="container rounded-5">
                     <div class="row row-cols-2 text-white text-center fs-5 bg-success rounded-top-5">
                         <div class="col-5 pt-2 w-50">
-                            <p>
+                            <p class="crescer-subtitulo-1-d">
                                 Ultimos Lançamentos
                             </p>
                         </div>
                         <div class="lc-futuros col-5 pt-2 w-50">
-                            <p>
+                            <p class="crescer-subtitulo-1-d">
                                 Lançamentos<br> Futuros
                             </p>
                         </div>
                     </div>
                     <div class="azulinho-bg-table row row-cols-3 text-center py-2">
                         <div class="col">
-                            <h5>data</h5>
+                            <h5 class="crescer-subtitulo-2-d">data</h5>
                         </div>
                         <div class="col">
-                            <h5>descrição</h5>
+                            <h5 class="crescer-subtitulo-2-d">descrição</h5>
                         </div>
                         <div class="col">
-                            <h5>Valor</h5>
+                            <h5 class="crescer-subtitulo-2-d">Valor</h5>
                         </div>
                     </div>
                     <div class="azulao-bg-table row row-cols-3 text-center py-1">
@@ -214,11 +224,9 @@
                 </div>
         </div>
     </main>
-
     <footer>
-        
+        <p class="crescer-foot d-flex justify-content-center text-white justify-content-lg-end mt-4 me-lg-4">Gabriela Camargo
+            Oliveira - ©Copyright 2023 - Todos os direitos reservados</p>
     </footer>
-
 </body>
-
 </html>
