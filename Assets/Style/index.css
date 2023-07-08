@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+
+body {
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: cover, cover;
+    background-color: #101D26;
+    background-image: url("/Assets/Images/BACKGROUND.svg");
+}
+
+div{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+h3{
+    font-family: 'Iceberg', cursive;
+    color: #4F8B6F;
+    font-size: 60px;
+    font-weight: 700;
+}
+label{
+    font-weight: 700;
+    font-size: 24px;
+    color: #A56945;
+}
+
+input{
+    background: #4F8B6F !important;
+    height: 80px;
+    border-radius: 28px;
+    border: none !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.entrar{
+    background-color: #4F8B6F;
+    color: #101D26;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.entrar:hover{
+    background-color: #A56945;
+    color: #86EBBC;
+}
+
+.entrar:active{
+    background-color: #4F8B6F !important;
+    color: #101D26;
+}
+
+a{
+    color: #A56945;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-family: serif;
+}

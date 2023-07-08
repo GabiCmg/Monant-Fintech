@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+/* Nav */
+body{
+    background-color: #021C41;
+    /* min-width: 1024px !important; */
+    /* background-image: url("./Images/footer.svg"), ;
+    background: repeat cover;  */
+    
+}
+.monant{
+    font-family: 'Iceberg', cursive;
+    color: #4F8B6F;
+    font-size: 34px;
+    font-weight: 700;
+}
+.navbar{
+    background-color: #021C41 !important;
+    fill: #01122A;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.nav-link{
+    color: #ffff !important;
+}
+
+.nav-link:active{
+    color: #ffff !important;
+}
+
+/* Nav */
+
+/* Table */
+.azulao-bg-table{
+    background-color: #01122A;
+    fill: #01122A;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.azulinho-bg-table{
+    fill: #021C41;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.lc-futuros{
+    border-top-right-radius: 2rem;
+    background-color: #35604C;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+}
+div .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Table */
+main{
+    margin-top: 8rem;
+}
+h4{
+    color: #A56945;
+}
+
+.cartao {
+    border-radius: 25px;
+}
+
+.informacoes-cartao{
+    
+}
+
+.botao-acao{
+    font-weight: 500;
+    color: white;
+    box-shadow: 0px 5px 0px 4px #6E46A6 !important;
+}
+
+footer{
+    max-width: auto !important;
+	height:auto ;
+}
+
+@media (max-width: 990px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .direita{
+        padding-top: 10%;
+    }
+    h4{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 990px){
+    
+    /* border rounded-pill border-2 text-center */
+    .botao-nav{
+        border: 0.2rem solid #4F8B6F;
+        border-radius: 2rem;
+        text-align: center;
+        width: 128px;
+    }
+
+    .botao-nav:active{
+        background-color: #4F8B6F;
+        color: #fff !important;
+    }
+}
+
+@media (min-width: 1200px){
+    
+    /* border rounded-pill border-2 text-center */
+    .botao-nav{
+        width: 150px;
+    }
+
+}
